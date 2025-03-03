@@ -1,10 +1,8 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "api/index.py", "use": "@vercel/python", "config": { "pythonVersion": "3.10" } }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "api/index.py" }
-    ]
+    "build": {
+      "env": {
+        "PYTHON_VERSION": "3.10"
+      }
+    }
   }
   
